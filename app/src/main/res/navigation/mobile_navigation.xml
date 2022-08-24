@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_about">
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.jmyebenes.curriculum.ui.about.AboutFragment"
+        android:label="@string/title_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/navigation_work"
+        android:name="com.jmyebenes.curriculum.ui.work.WorkFragment"
+        android:label="@string/title_work"
+        tools:layout="@layout/fragment_work">
+        <action
+            android:id="@+id/action_navigation_work_to_workDetailFragment"
+            app:destination="@id/workDetailFragment" />
+        <action
+            android:id="@+id/action_navigation_work_to_projectDetailFragment"
+            app:destination="@id/projectDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_studies"
+        android:name="com.jmyebenes.curriculum.ui.studies.StudiesFragment"
+        android:label="@string/title_studies"
+        tools:layout="@layout/fragment_studies" />
+
+    <fragment
+        android:id="@+id/navigation_contact"
+        android:name="com.jmyebenes.curriculum.ui.contact.ContactFragment"
+        android:label="@string/title_contact"
+        tools:layout="@layout/fragment_studies" />
+
+    <fragment
+        android:id="@+id/workDetailFragment"
+        android:name="com.jmyebenes.curriculum.ui.work.WorkDetailFragment"
+        android:label=""
+        tools:layout="@layout/fragment_work_detail" >
+        <argument
+            android:name="workModel"
+            app:argType="com.jmyebenes.curriculum.domain.model.WorkModel" />
+        <action
+            android:id="@+id/action_workDetailFragment_to_projectDetailFragment"
+            app:destination="@id/projectDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/projectDetailFragment"
+        android:name="com.jmyebenes.curriculum.ui.work.ProjectDetailFragment"
+        android:label=""
+        tools:layout="@layout/fragment_project_detail" >
+        <argument
+            android:name="projectModel"
+            app:argType="com.jmyebenes.curriculum.domain.model.ProjectModel" />
+    </fragment>
+</navigation>

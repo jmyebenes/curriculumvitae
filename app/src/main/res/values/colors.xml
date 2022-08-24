@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_primary_light">#B7E4C7</color>
+    <color name="green_primary_medium">#52B788</color>
+    <color name="green_primary_dark">#2D6A4F</color>
+    <color name="green_secondary_medium">#FF03DAC5</color>
+    <color name="green_secondary_dark">#FF018786</color>
+    <!--    <color name="black">#444444</color>-->
+<!--    <color name="black">#131816</color>-->
+    <color name="black">#141917</color>
+    <color name="green_primary_medium_night">#74C69D</color>
+    <color name="gray">#FFAAAAAA</color>
+    <color name="gray_light">#FFCCCCCC</color>
+<!--    <color name="gray_light">#d6f0df</color>-->
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<resources>-->
+<!--<color name="green_primary_light">#C5E1A5</color>-->
+<!--<color name="green_primary_medium">#8BC34A</color>-->
+<!--<color name="green_primary_dark">#689F38</color>-->
+<!--<color name="green_secondary_medium">#FF03DAC5</color>-->
+<!--<color name="green_secondary_dark">#FF018786</color>-->
+<!--&lt;!&ndash;    <color name="black">#444444</color>&ndash;&gt;-->
+<!--<color name="black">#171A14</color>-->
+<!--<color name="black2">#8EAC6B</color>-->
+<!--<color name="gray">#FFAAAAAA</color>-->
+<!--<color name="gray_light">#FFCCCCCC</color>-->
+<!--<color name="white">#FFFFFFFF</color>-->
+<!--<color name="transparent">#00FFFFFF</color>-->
+<!--</resources>-->

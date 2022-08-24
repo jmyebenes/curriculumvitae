@@ -1,0 +1,108 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Curriculum" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_primary_medium</item>
+        <item name="colorPrimaryVariant">@color/green_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green_secondary_medium</item>
+        <item name="colorSecondaryVariant">@color/green_secondary_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="colorControlActivated">@color/green_primary_medium</item>
+
+        <item name="android:background">@color/white</item>
+<!--        <item name="android:windowBackground">@color/white</item>-->
+<!--        <item name="android:colorBackground">@color/white</item>-->
+
+        <!-- Status bar color. -->
+        <!--<item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>-->
+        <!-- Customize your theme here. -->
+
+        <!-- Texto -->
+        <item name="colorOnSurface">?attr/colorPrimary</item>
+        <!-- Icono sin seleccionar -->
+        <item name="colorOnSurfaceVariant">?attr/colorPrimary</item>
+        <!-- Fondo seleccionado -->
+        <item name="colorSecondaryContainer">@color/transparent</item>
+        <!-- Icono seleccionado -->
+        <item name="colorOnSecondaryContainer">?attr/colorPrimary</item>
+        <!-- Fondo -->
+        <item name="colorSurface">?attr/colorPrimaryVariant</item>
+
+    </style>
+
+    <style name="textPrimaryL">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="textPrimaryM">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="textPrimaryS">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="textSecondaryL">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="textSecondaryM">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="textSecondaryS">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="textTertiaryL">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="textTertiaryM">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="textTertiaryS">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="textWhiteL">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="textWhiteM">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="textWhiteS">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+</resources>

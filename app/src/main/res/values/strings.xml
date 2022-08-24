@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Curriculum</string>
+    <string name="title_about">Sobre mí</string>
+    <string name="title_work">Experiencia</string>
+    <string name="title_studies">Formación</string>
+    <string name="title_contact">Contacto</string>
+</resources>
