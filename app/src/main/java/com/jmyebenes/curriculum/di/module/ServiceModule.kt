@@ -1,19 +1,26 @@
 package com.jmyebenes.curriculum.di.module
 
+import com.jmyebenes.curriculum.core.RetrofitHelper
 import com.jmyebenes.curriculum.data.network.AboutService
 import com.jmyebenes.curriculum.data.network.ContactService
 import com.jmyebenes.curriculum.data.network.StudyService
 import com.jmyebenes.curriculum.data.network.WorkService
+import com.jmyebenes.curriculum.domain.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.scopes.ViewModelScoped
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class DomainModule {
+class ServiceModule {
+
+    @Provides
+    @Singleton
+    fun retrofitProvider() = RetrofitHelper.getRetrofit()
 
     @Provides
     @Singleton
