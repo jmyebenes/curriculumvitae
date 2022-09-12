@@ -16,6 +16,8 @@ abstract class BaseViewModel : ViewModel() {
     private val _error = MutableLiveData<String>()
     val error: LiveData<String> = _error
 
+    open fun init() {}
+
     fun executeCoroutine(
         onSuccess: suspend CoroutineScope.() -> Unit,
         onError: suspend CoroutineScope.(Throwable) -> Unit

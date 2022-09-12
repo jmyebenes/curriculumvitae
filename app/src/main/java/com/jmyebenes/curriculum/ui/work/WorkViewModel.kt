@@ -11,7 +11,7 @@ class WorkViewModel : BaseViewModel() {
     private val _data = MutableLiveData<List<WorkModel>>()
     val data: LiveData<List<WorkModel>> = _data
 
-    fun init() {
+    override fun init() {
         showLoading(true)
         executeCoroutine(
             onSuccess = {
