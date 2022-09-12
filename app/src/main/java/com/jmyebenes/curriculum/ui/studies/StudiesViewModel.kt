@@ -11,7 +11,7 @@ class StudiesViewModel : BaseViewModel() {
     private val _data = MutableLiveData<List<StudyModel>>()
     val data: LiveData<List<StudyModel>> = _data
 
-    fun init() {
+    override fun init() {
         showLoading(true)
         executeCoroutine(
             onSuccess = {

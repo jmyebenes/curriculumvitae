@@ -1,48 +1,19 @@
 package com.jmyebenes.curriculum.ui.studies
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
 import com.jmyebenes.curriculum.databinding.FragmentStudiesBinding
 import com.jmyebenes.curriculum.ui.base.BaseFragment
 import com.jmyebenes.curriculum.ui.studies.adapter.StudyAdapter
 
-class StudiesFragment : BaseFragment() {
-
-    private lateinit var viewModel: StudiesViewModel
-    private lateinit var binding: FragmentStudiesBinding
+class StudiesFragment : BaseFragment<StudiesViewModel, FragmentStudiesBinding>() {
 
     private lateinit var adapter: StudyAdapter
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentStudiesBinding.inflate(inflater, container, false)
-        return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        viewModel = ViewModelProvider(this)[StudiesViewModel::class.java]
-
-        initView()
-        setObservers()
-        setListeners()
-
-        viewModel.init()
-    }
-
-    private fun initView() {
+    override fun initView() {
         adapter = StudyAdapter()
         binding.rvStudiesList.adapter = adapter
     }
 
-    private fun setObservers() {
+    override fun setObservers() {
         viewModel.data.observe(viewLifecycleOwner) {
             adapter.setData(it)
         }
@@ -54,7 +25,6 @@ class StudiesFragment : BaseFragment() {
         }
     }
 
-    private fun setListeners() {
-
-    }
+    override fun getViewModelClass(): Class<StudiesViewModel> = StudiesViewModel::class.java
+    override fun getViewBinding(): FragmentStudiesBinding = FragmentStudiesBinding.inflate(layoutInflater)
 }

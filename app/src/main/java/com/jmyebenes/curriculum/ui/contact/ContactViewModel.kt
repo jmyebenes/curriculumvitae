@@ -11,7 +11,7 @@ class ContactViewModel : BaseViewModel() {
     private val _data = MutableLiveData<List<ContactModel>>()
     val data: LiveData<List<ContactModel>> = _data
 
-    fun init() {
+    override fun init() {
         showLoading(true)
         executeCoroutine(
             onSuccess = {

@@ -11,7 +11,7 @@ class AboutViewModel : BaseViewModel() {
     private val _data = MutableLiveData<AboutModel>()
     val data: LiveData<AboutModel> = _data
 
-    fun init() {
+    override fun init() {
         showLoading(true)
         executeCoroutine(
             onSuccess = {
