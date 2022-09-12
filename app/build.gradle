@@ -26,6 +26,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions 'default'
+    productFlavors {
+        production {
+            dimension 'default'
+            manifestPlaceholders = [appLabel:"@string/app_name_production"]
+        }
+        mock {
+            dimension 'default'
+            manifestPlaceholders = [appLabel:"@string/app_name_mock"]
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
