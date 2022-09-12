@@ -3,7 +3,9 @@ package com.jmyebenes.curriculum.ui.about
 import com.jmyebenes.curriculum.core.extensions.loadImage
 import com.jmyebenes.curriculum.databinding.FragmentAboutBinding
 import com.jmyebenes.curriculum.ui.base.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class AboutFragment : BaseFragment<AboutViewModel, FragmentAboutBinding>() {
 
     override fun setObservers() {

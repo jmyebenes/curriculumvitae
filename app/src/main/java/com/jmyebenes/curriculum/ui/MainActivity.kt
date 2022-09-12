@@ -1,7 +1,6 @@
 package com.jmyebenes.curriculum.ui
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -15,7 +14,9 @@ import com.jmyebenes.curriculum.core.extensions.gone
 import com.jmyebenes.curriculum.core.extensions.visible
 import com.jmyebenes.curriculum.core.extensions.visibleOrGone
 import com.jmyebenes.curriculum.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController

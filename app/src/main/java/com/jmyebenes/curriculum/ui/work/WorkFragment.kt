@@ -5,7 +5,9 @@ import com.jmyebenes.curriculum.domain.model.ProjectModel
 import com.jmyebenes.curriculum.domain.model.WorkModel
 import com.jmyebenes.curriculum.ui.base.BaseFragment
 import com.jmyebenes.curriculum.ui.work.adapter.WorkAdapter
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class WorkFragment : BaseFragment<WorkViewModel, FragmentWorkBinding>() {
 
     private lateinit var adapter: WorkAdapter
