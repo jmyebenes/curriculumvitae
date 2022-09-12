@@ -3,7 +3,9 @@ package com.jmyebenes.curriculum.ui.contact
 import com.jmyebenes.curriculum.databinding.FragmentContactBinding
 import com.jmyebenes.curriculum.ui.base.BaseFragment
 import com.jmyebenes.curriculum.ui.contact.adapter.ContactAdapter
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ContactFragment : BaseFragment<ContactViewModel, FragmentContactBinding>() {
 
     private lateinit var adapter: ContactAdapter

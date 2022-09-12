@@ -3,7 +3,9 @@ package com.jmyebenes.curriculum.ui.studies
 import com.jmyebenes.curriculum.databinding.FragmentStudiesBinding
 import com.jmyebenes.curriculum.ui.base.BaseFragment
 import com.jmyebenes.curriculum.ui.studies.adapter.StudyAdapter
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class StudiesFragment : BaseFragment<StudiesViewModel, FragmentStudiesBinding>() {
 
     private lateinit var adapter: StudyAdapter

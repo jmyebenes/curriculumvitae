@@ -5,8 +5,12 @@ import androidx.lifecycle.MutableLiveData
 import com.jmyebenes.curriculum.domain.GetAboutDataUseCase
 import com.jmyebenes.curriculum.domain.model.AboutModel
 import com.jmyebenes.curriculum.ui.base.BaseViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class AboutViewModel : BaseViewModel() {
+@HiltViewModel
+class AboutViewModel @Inject constructor(private val getAboutDataUseCase: GetAboutDataUseCase) :
+    BaseViewModel() {
 
     private val _data = MutableLiveData<AboutModel>()
     val data: LiveData<AboutModel> = _data
@@ -15,7 +19,7 @@ class AboutViewModel : BaseViewModel() {
         showLoading(true)
         executeCoroutine(
             onSuccess = {
-                val data = GetAboutDataUseCase().execute(Unit)
+                val data = getAboutDataUseCase.execute(Unit)
                 _data.value = data
                 showLoading(false)
             },
